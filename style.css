@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-image: url(img/fondo\ para\ header.jpg) ;
+    color: white;
+    font-size: 25px;
+    text-align: center; 
+    padding: 30px;
+}
+img{
+    margin-top: 30px;
+}
+h3{
+    color: yellow;
+    font-size: 40px;
+}
+nav{
+    background-color: #9c7118;
+    padding: 20px;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+}
+li{
+    font-size: 30px;  
+}
+section{
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+}
+P{
+    font-size: 25PX;
+}
+footer{
+    padding: 100px;
+    font-size: 15px;
+    text-align: center;
+}
