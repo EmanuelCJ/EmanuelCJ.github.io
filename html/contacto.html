@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Laboratorio 3 - Programación Estática y Laboratorio Web">
+    <meta name="author" content="Emanuel Castrillo Aguirre">
+    <link rel="shortcut icon" href="../img/logo_blanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../img/logo_blanco.png" alt="logo del curza">
+        <nav>
+            <a class="enlace" href="../index.html">HOME</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section>
+            <h1>Formulario de Contacto</h1>
+            <a href="../index.html">Volver a la página principal</a>
+            <form action="#">
+                <p><label for="name">Nombre(requerido):<input id="name" type="text" required maxlength="20"></label></p>
+                <p><label for="lastname">Apellido:<input id="lastname" type="text" maxlength="20"></label></p>
+                <p><label for="email">Email(requerido):<input type="email" id="email" required></label></p>
+                <p><label for="phone">Telefono: <input type="tel" placeholder="ingrese su numero"></label></p>
+                <p><label for="number">Edad:<input type="number" name="numero" id="number" min="1"></label></p>
+                <p><label for="textea">Dirección:<textarea></textarea></label></p>
+                <p><label for="provincia">Provincia:<input type="text" name="provincia" id="provincia"></label></p>
+                <p><label for="cp">Código Postal:<input type="text" name="codigoPostal" id="cp"></label></p>
+                <fieldset>
+                    <legend>Método preferido de Contacto</legend>
+                    <p><label for="electronico">Correo Electrónico <input type="radio" name="metodo"
+                                id="electronico"></label></p>
+                    <p><label for="postal">Correo Postal<input type="radio" name="metodo" id="postal"></label></p>
+                    <p><label for="telefono">Telefono <input type="radio" name="metodo" id="telefono"></label></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipo de suscripción</legend>
+                    <p><label for="noticias">Noticias <input type="checkbox" name="Noticias" id="noticias"></label></p>
+                    <p><label for="promociones">Promociones <input type="checkbox" name="" id="Promociones"></label></p>
+                    <p><label for="alertas">Alertas <input type="checkbox" name="Alertas" id="alertas"></label></p>
+                    <p><label for="eventos">Eventos <input type="checkbox" name="Eventos" id="eventos"></label></p>
+                </fieldset>
+                <p><input type="submit" value="Cargar"></p>
+            </form>
+        </section>
+        <section class="tabla">
+            <h2>Tabla con info</h2>
+            <table>
+                <thead>
+                    <th>Campo</th>
+                    <th>valor</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Apellido</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Telefono</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Edad</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Direccion</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Provincia</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Codigo Postal</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Metodo de Contacto</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tipo de suscripción</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <!--Pie de pagina-->
+        <p>Establecimiento ubicado en calle Monseñor Esandi y Ayacucho, 8500 Viedma, Río Negro, Argentina</p>
+        <p>&copy; copyright 2024 | Emanuel Castrillo</p>
+    </footer>
+
+</html>

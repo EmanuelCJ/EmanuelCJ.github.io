@@ -1,0 +1,88 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #4CAF50; /* Color verde para el encabezado */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header h3 {
+    font-weight: normal; /* Peso normal para el subtítulo */
+}
+
+/* Navigation */
+nav {
+    background-color: #333; /* Color de fondo del menú */
+}
+
+nav ul {
+    list-style: none; /* Quitar viñetas */
+    padding: 10px 0;
+    text-align: center; /* Centrar texto en el menú */
+}
+
+nav li {
+    display: inline; /* Mostrar elementos en línea */
+    margin: 0 15px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555; /* Color al pasar el ratón */
+}
+
+/* Main */
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+main section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 2000px; /* Ancho máximo para la sección */
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Color del pie de página */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0; /* Espacio entre párrafos */
+}
