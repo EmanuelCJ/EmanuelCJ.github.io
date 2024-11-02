@@ -12,20 +12,21 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <img class="logo" src="../img/logo_blanco.png" alt="logo del curza">
+    <h1 id="titulo">Formulario de Contacto</h1>
     <nav>
       <a class="enlace" href="../index.html">HOME</a>
     </nav>
   </header>
   <main class="main">
-    <section>
-      <h1>Formulario de Contacto</h1>
+    <section class="form-contenedor" id="contenedorForm">
+      <h2 class="titulo-contenedor" id="tituloForm">Ingrese sus datos</h2>
       <a href="../index.html">Volver a la página principal</a>
       <form action="#">
-        <p><label for="name">Nombre(requerido):<input id="name" type="text" required maxlength="20"></label></p>
+        <p><label for="name">Nombre (requerido):<input id="name" type="text" required maxlength="20"></label></p>
         <p><label for="lastname">Apellido:<input id="lastname" type="text" maxlength="20"></label></p>
-        <p><label for="email">Email(requerido):<input type="email" id="email" required></label></p>
+        <p><label for="email">Email (requerido):<input type="email" id="email" required></label></p>
         <p><label for="phone">Telefono: <input type="tel" placeholder="ingrese su numero"></label></p>
         <p><label for="number">Edad:<input type="number" name="numero" id="number" min="16" max="120"></label>
         </p>
@@ -68,7 +69,7 @@
       </form>
     </section>
     <section class="tabla">
-      <h2>Tabla con info</h2>
+      <h2 class="titulo-contenedor">Tabla con info</h2>
       <table>
         <thead>
           <th>Campo</th>
@@ -120,9 +121,16 @@
     </section>
   </main>
   <footer class="footer">
+    <div class="contenedor-flecha">
+      <a href="#contenedorForm">
+        <img src="../img/flecha.png" alt="" class="flecha">
+      </a>
+    </div>
+    <div class="elementos-footer">
+      <p>Establecimiento Educativo ubicado en calle Monseñor Esandi y Ayacucho, 8500 Viedma, Río Negro, Argentina</p>
+      <p>&copy; copyright 2024 | Emanuel Castrillo</p>
+    </div>
     <!--Pie de pagina-->
-    <p>Establecimiento ubicado en calle Monseñor Esandi y Ayacucho, 8500 Viedma, Río Negro, Argentina</p>
-    <p>&copy; copyright 2024 | Emanuel Castrillo</p>
   </footer>
 
 </html>

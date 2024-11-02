@@ -14,10 +14,23 @@ body {
 
 /* Header */
 .header {
-    background-color: #4CAF50; /* Color verde para el encabezado */
+    background-color: #4CAF50;
+    /* Color verde para el encabezado */
     color: white;
     text-align: center;
     padding: 20px 0;
+    position: sticky;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.parrafo-contenedor {
+    max-height: 300px;
 }
 
 .header h1 {
@@ -25,23 +38,29 @@ body {
 }
 
 .header h3 {
-    font-weight: normal; /* Peso normal para el subtítulo */
+    font-weight: normal;
+    /* Peso normal para el subtítulo */
 }
 
 /* Navigation */
 nav {
-    background-color: #333; /* Color de fondo del menú */
+    background-color: #333;
+    /* Color de fondo del menú */
 }
 
 nav ul {
-    list-style: none; /* Quitar viñetas */
+    list-style: none;
+    /* Quitar viñetas */
     padding: 10px 0;
-    text-align: center; /* Centrar texto en el menú */
+    text-align: center;
+    /* Centrar texto en el menú */
 }
 
 nav li {
-    display: inline; /* Mostrar elementos en línea */
-    margin: 0 15px; /* Espacio entre los enlaces */
+    display: inline;
+    /* Mostrar elementos en línea */
+    margin: 0 15px;
+    /* Espacio entre los enlaces */
 }
 
 nav a {
@@ -53,7 +72,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #555; /* Color al pasar el ratón */
+    background-color: #555;
+    /* Color al pasar el ratón */
 }
 
 /* Main */
@@ -71,18 +91,38 @@ main section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 2000px; /* Ancho máximo para la sección */
+    max-width: 1500px;
+    /* Ancho máximo para la sección */
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.main>.linea {
+    position: sticky;
+    top: 0;
 }
 
 /* Footer */
 .footer {
-    background-color: #333; /* Color del pie de página */
+    display: flex;
+    background-color: #333;
+    /* Color del pie de página */
     color: white;
-    text-align: center;
-    padding: 10px 20px;
+    padding: 10px;
     width: 100%;
 }
 
-.footer p {
-    margin: 5px 0; /* Espacio entre párrafos */
+.footer .elementos-footer {
+    margin-top: 20px;
+    /* Espacio entre párrafos */
+    width: 90%;
+    text-align: center;
+}
+
+.flecha {
+    padding: 10px;
+    max-width: 60px;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: black;
 }
