@@ -97,7 +97,7 @@ main section {
     overflow-y: auto;
 }
 
-.main>.linea {
+.main > .linea {
     position: sticky;
     top: 0;
 }

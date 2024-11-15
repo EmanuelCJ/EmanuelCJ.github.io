@@ -23,16 +23,16 @@
     <section class="form-contenedor" id="contenedorForm">
       <h2 class="titulo-contenedor" id="tituloForm">Ingrese sus datos</h2>
       <a href="../index.html">Volver a la página principal</a>
-      <form action="#">
-        <p><label for="name">Nombre (requerido):<input id="name" type="text" required maxlength="20"></label></p>
-        <p><label for="lastname">Apellido:<input id="lastname" type="text" maxlength="20"></label></p>
+      <form id="formulario" class="form">
+        <p><label for="name">Nombre (requerido):<input id="nombre" type="text" required maxlength="20"></label></p>
+        <p><label for="lastname">Apellido:<input id="apellido" type="text" maxlength="20"></label></p>
         <p><label for="email">Email (requerido):<input type="email" id="email" required></label></p>
-        <p><label for="phone">Telefono: <input type="tel" placeholder="ingrese su numero"></label></p>
-        <p><label for="number">Edad:<input type="number" name="numero" id="number" min="16" max="120"></label>
+        <p><label for="phone">Telefono: <input id="celular" type="tel" placeholder="ingrese su numero"></label></p>
+        <p><label for="number">Edad:<input type="number" name="numero" id="edad" min="16" max="120"></label>
         </p>
-        <p><label for="textea">Dirección:<textarea></textarea></label></p>
+        <p><label for="textea">Dirección:<textarea id="direccion"></textarea></label></p>
         <p><label for="">Provincia:
-            <input type="text" list="provincias" name="" id="">
+            <input type="text" list="provincias" name="" id="provincia">
             <datalist id="provincias">
               <option value="Rio Negro"></option>
               <option value="Chubut"></option>
@@ -41,31 +41,30 @@
               <option value="Neuquén"></option>
             </datalist>
           </label></p>
-        <p><label for="cp">Código Postal:<input type="text" name="codigoPostal" id="cp"
-              pattern="^[A-Z]\d{4}[A-Z]{3}$"></label></p>
+        <p><label for="cp">Código Postal:<input type="text" name="codigoPostal" id="cp"></label></p>
         <fieldset>
           <legend>Método preferido de Contacto</legend>
-          <p><label for="electronico">Correo Electrónico <input type="radio" name="metodo" id="electronico"
-                checked></label></p>
-          <p><label for="postal">Correo Postal<input type="radio" name="metodo" id="postal"></label></p>
-          <p><label for="telefono">Telefono <input type="radio" name="metodo" id="telefono"></label></p>
+          <p><label for="electronico">Correo Electrónico <input type="radio" name="metodo" id="correo" value="Correo Electrónico" checked></label>
+          </p>
+          <p><label for="postal">Correo Postal<input type="radio" name="metodo" id="postal" value="Correo Postal"></label></p>
+          <p><label for="telefono">Telefono <input type="radio" name="metodo" id="telefono" value="Telefono"></label></p>
         </fieldset>
         <fieldset>
           <legend>Tipo de suscripción</legend>
           <p><label for="noticias">Noticias
-              <input type="checkbox" name="suscripcion" id="Noticias" value="noticias">
+              <input type="checkbox" name="suscripcion" id="noticias" value="noticias">
             </label></p>
           <p><label for="promociones">Promociones
-              <input type="checkbox" name="suscripcion" id="Promociones" value="Promociones">
+              <input type="checkbox" name="suscripcion" id="promociones" value="Promociones">
             </label></p>
           <p><label for="alertas">Alertas
-              <input type="checkbox" name="suscripcion" id="Alertas" value="Alertas" checked>
+              <input type="checkbox" name="suscripcion" id="alertas" value="Alertas" checked>
             </label></p>
           <p><label for="eventos">Eventos
-              <input type="checkbox" name="suscripcion" id="Eventos" value="Eventos">
+              <input type="checkbox" name="suscripcion" id="eventos" value="Eventos">
             </label></p>
         </fieldset>
-        <p><input type="submit" value="Cargar"></p>
+        <button type="submit">Enviar</button>
       </form>
     </section>
     <section class="tabla">
@@ -78,43 +77,43 @@
         <tbody>
           <tr>
             <td>Nombre</td>
-            <td></td>
+            <td id="celda-1"></td>
           </tr>
           <tr>
             <td>Apellido</td>
-            <td></td>
+            <td id="celda-2"></td>
           </tr>
           <tr>
             <td>Email</td>
-            <td></td>
+            <td id="celda-3"></td>
           </tr>
           <tr>
             <td>Telefono</td>
-            <td></td>
+            <td id="celda-4"></td>
           </tr>
           <tr>
             <td>Edad</td>
-            <td></td>
+            <td id="celda-5"></td>
           </tr>
           <tr>
             <td>Direccion</td>
-            <td></td>
+            <td id="celda-6"></td>
           </tr>
           <tr>
             <td>Provincia</td>
-            <td></td>
+            <td id="celda-7"></td>
           </tr>
           <tr>
             <td>Codigo Postal</td>
-            <td></td>
+            <td id="celda-8"></td>
           </tr>
           <tr>
             <td>Metodo de Contacto</td>
-            <td></td>
+            <td id="celda-9"></td>
           </tr>
           <tr>
             <td>Tipo de suscripción</td>
-            <td></td>
+            <td id="celda-10"></td>
           </tr>
         </tbody>
       </table>
@@ -132,5 +131,7 @@
     </div>
     <!--Pie de pagina-->
   </footer>
+  <script src="/js/formulario.js"></script>
+</body>
 
 </html>
