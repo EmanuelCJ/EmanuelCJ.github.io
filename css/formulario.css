@@ -32,14 +32,21 @@ body {
     position: sticky;
     top: 0;
 }
+
 .header h1 {
     font-size: 40px;
     font-weight: bold;
+    color: #fff;
 }
 
 .logo {
-    width: 100px;
-    animation: giro 4s infinite;/* animacion */
+    height: 70px;
+    width: auto;
+    animation: giro 4s infinite;
+    /* animacion */
+}
+.header .logo{
+    cursor: pointer;
 }
 /* realiza un giro de 360 grados*/
 @keyframes giro {
@@ -55,183 +62,194 @@ body {
         margin-left: auto;
     }
 }
+.header .nav-links{
+    list-style: none;
+}
 
-    nav a {
-        text-decoration: none;
-        padding: 10px 20px;
-        background-color: #444;
-        border-radius: 5px;
-        margin-left: 10px;
-        transition: background-color 0.3s;
-        color: white;
-    }
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
 
-    nav a:hover {
-        background-color: #555;
-    }
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
 
-    /* Main */
-    .main {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        background-color: #212121;
-    }
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
 
-    .main a {
-        color: purple;
-        font-weight: bold;
-    }
+.header .nav-links li a:hover{
+    color: #ffbc0e;
+}
+/* Main */
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #212121;
+}
 
-    main section {
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 600px;
-        margin-bottom: 30px;
-    }
+.main a {
+    color: purple;
+    font-weight: bold;
+}
 
-    /* Formulario */
-    form {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+main section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
 
-    .titulo-contenedor {
-        font-size: 30px;
-        font-weight: bold;
-    }
+/* Formulario */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    form p {
-        margin: 10px 0;
-    }
+.titulo-contenedor {
+    font-size: 30px;
+    font-weight: bold;
+}
 
-    label {
-        font-weight: bold;
-    }
-    input{
-        font-weight: bold;
-    }
+form p {
+    margin: 10px 0;
+}
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="number"],
-    textarea {
-        width: 100%;
-        padding: 8px;
-        margin-top: 5px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        max-width: 100%;
-    }
+label {
+    font-weight: bold;
+}
 
-    textarea {
-        min-height: 50px;
-        min-width: 100%;
-    }
+input {
+    font-weight: bold;
+}
 
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-    }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 100%;
+}
 
-    input[type="submit"]:hover {
-        background-color: #45a049;
-    }
+textarea {
+    min-height: 50px;
+    min-width: 100%;
+}
 
-    /* Fieldsets para radios y checkboxes */
-    fieldset {
-        border: 1px solid #ccc;
-        padding: 20px;
-        margin: 12px 0;
-        border-radius: 5px;
-    }
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-    fieldset legend {
-        font-weight: bold;
-    }
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
-    /* Alinear horizontalmente los radios y checkboxes */
-    fieldset p {
-        display: inline;
-        align-items: center;
-        text-align: center;
-        margin: 10px;
-    }
+/* Fieldsets para radios y checkboxes */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 12px 0;
+    border-radius: 5px;
+}
 
-    fieldset label {
-        position: relative;
-        padding-top: 5px;
-    }
+fieldset legend {
+    font-weight: bold;
+}
 
-    input[type="radio"],
-    input[type="checkbox"] {
-        position: absolute;
-        left: 0%;
-        bottom: 100%;
+/* Alinear horizontalmente los radios y checkboxes */
+fieldset p {
+    display: inline;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
 
-    }
+fieldset label {
+    position: relative;
+    padding-top: 5px;
+}
 
-    .form-contenedor {
-        margin-right: 40px;
-        /* Separamos los contenedores section */
-    }
+input[type="radio"],
+input[type="checkbox"] {
+    position: absolute;
+    left: 0%;
+    bottom: 100%;
 
-    /* Table */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        padding-left: 10px;
+}
 
-    }
+.form-contenedor {
+    margin-right: 40px;
+    /* Separamos los contenedores section */
+}
 
-    table th,
-    table td {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: left;
-    }
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    padding-left: 10px;
 
-    table th {
-        background-color: #333;
-        color: white;
-    }
-    table th , td{
-        font-weight: bold;
-    }
+}
 
-   /* Footer */
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table th,
+td {
+    font-weight: bold;
+}
+
+/* Footer */
 .footer {
     display: flex;
-    background-color: #333; /* Color del pie de página */
+    background-color: #333;
+    /* Color del pie de página */
     color: white;
     padding: 10px;
     width: 100%;
 }
 
 .footer .elementos-footer {
-    margin-top: 20px; /* Espacio entre párrafos */
+    margin-top: 20px;
+    /* Espacio entre párrafos */
     width: 90%;
     text-align: center;
 }
-.flecha{
+
+.flecha {
     padding: 10px;
     max-width: 60px;
     border-style: solid;
     border-radius: 100%;
     border-color: black;
 }
-
-    

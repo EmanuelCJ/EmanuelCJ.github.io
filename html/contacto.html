@@ -13,10 +13,16 @@
 
 <body>
   <header class="header" id="header">
-    <img class="logo" src="../img/logo_blanco.png" alt="logo del curza">
+    <div class="contenedor-logo">
+      <img class="logo" src="../img/logo_blanco.png" alt="logo del curza">
+    </div>
     <h1 id="titulo">Formulario de Contacto</h1>
     <nav>
-      <a class="enlace" href="../index.html">HOME</a>
+      <ul class="nav-links">
+        <li> <a href="../index.html" rel="noopener noreferrer">Home</a></li>
+        <li><a href="acercade.html" rel="noopener noreferrer">Acerca de</a></li>
+        <li><a href="juego.html" rel="noopener noreferrer">Juego</a></li>
+      </ul>
     </nav>
   </header>
   <main class="main">
@@ -44,10 +50,13 @@
         <p><label for="cp">Código Postal:<input type="text" name="codigoPostal" id="cp"></label></p>
         <fieldset>
           <legend>Método preferido de Contacto</legend>
-          <p><label for="electronico">Correo Electrónico <input type="radio" name="metodo" id="correo" value="Correo Electrónico" checked></label>
+          <p><label for="electronico">Correo Electrónico <input type="radio" name="metodo" id="correo"
+                value="Correo Electrónico" checked></label>
           </p>
-          <p><label for="postal">Correo Postal<input type="radio" name="metodo" id="postal" value="Correo Postal"></label></p>
-          <p><label for="telefono">Telefono <input type="radio" name="metodo" id="telefono" value="Telefono"></label></p>
+          <p><label for="postal">Correo Postal<input type="radio" name="metodo" id="postal"
+                value="Correo Postal"></label></p>
+          <p><label for="telefono">Telefono <input type="radio" name="metodo" id="telefono" value="Telefono"></label>
+          </p>
         </fieldset>
         <fieldset>
           <legend>Tipo de suscripción</legend>
